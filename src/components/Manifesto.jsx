@@ -2,6 +2,7 @@ import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+
 gsap.registerPlugin(ScrollTrigger);
 
 const WORDS = [
@@ -9,12 +10,7 @@ const WORDS = [
   "turning", "effort", "into", "energy", "and", "motivation", "into", "confidence.",
 ];
 
-/**
- * Where each word starts, as [left %, vertical-centre %] of the pinned stage.
- * Measured from the reference video: five words sit in a loose staggered column on the
- * right half of the screen; the other nine wait below the fold and rise up while crossing
- * over the visible ones. Tweak these numbers to re-compose the scatter.
- */
+
 const START = [
   [4, 125],  // Fitmom Club®  (below, left)
   [40, 114], // brings
@@ -44,8 +40,6 @@ export default function Manifesto() {
     const ctx = gsap.context(() => {
       const words = gsap.utils.toArray("[data-w]");
 
-      // Put every word at its SCATTERED start position (offsets are relative to its
-      // final spot in the sentence). Re-run on every ScrollTrigger refresh/resize.
       const scatter = () => {
         const w = stage.current.clientWidth;
         const h = stage.current.clientHeight;

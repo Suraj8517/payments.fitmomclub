@@ -2,7 +2,11 @@ import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { defaultPlans } from "./Plans";
-
+import prenatal from "../assets/prenatal.webp";
+import postnatal from "../assets/postnatal.webp";
+import pro from "../assets/pro.webp";
+import tone from "../assets/tone.webp";
+import elite from "../assets/elite.webp";
 gsap.registerPlugin(ScrollTrigger);
 
 const css = `

@@ -20,7 +20,7 @@ const START = [
   [40, 114], // brings
   [62, 132], // strength
   [80, 120], // and
-  [92, 78],  // community    (clipped at the right edge)
+  [92, 78],  // community    
   [1, 142],  // together,
   [72, 35],  // turning
   [60, 44],  // effort

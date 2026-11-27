@@ -1,12 +1,16 @@
 import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
-
+import prenatal from "../assets/prenatal.webp";
+import postnatal from "../assets/postnatal.webp";
+import pro from "../assets/pro.webp";
+import tone from "../assets/tone.webp";
+import elite from "../assets/elite.webp";
 const CARDS = [
-  { src: "https://picsum.photos/seed/mobius1/600/750", bg: "#14110d", rot: -21, spread: -6 },
-  { src: "https://picsum.photos/seed/mobius2/600/750", bg: "#7a6a55", rot: -5, spread: 4 },
-  { src: "https://picsum.photos/seed/mobius3/600/750", bg: "#f2d64b", rot: -13, spread: -5 },
-  { src: "https://picsum.photos/seed/mobius4/600/750", bg: "#fde98a", rot: -9, spread: -4 },
-  { src: "https://picsum.photos/seed/mobius5/600/750", bg: "#ff8a00", rot: 5, spread: 4 },
+  { src: prenatal, bg: "#14110d", rot: -21, spread: -6 },
+  { src: postnatal, bg: "#7a6a55", rot: -5, spread: 4 },
+  { src: pro, bg: "#f2d64b", rot: -13, spread: -5 },
+  { src: tone, bg: "#fde98a", rot: -9, spread: -4 },
+  { src: elite, bg: "#ff8a00", rot: 5, spread: 4 },
 ];
 
 export default function Hero() {
@@ -76,7 +80,7 @@ export default function Hero() {
       {/* Image stack */}
       <div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center">
         <div
-          className="pointer-events-auto relative aspect-[3/4] w-[50vw] max-w-[380px] md:w-[20vw]"
+          className="pointer-events-auto relative aspect-[3/4] w-[50vw] max-w-[380px] md:w-[24vw]"
           onPointerEnter={() => fan(true)}
           onPointerLeave={() => fan(false)}
         >
